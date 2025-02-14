@@ -3,6 +3,6 @@
 
 int main(void)
 {
-    srand(time(NULL));
+    // srand(time(NULL));
     printf("%f", rand());
 }
