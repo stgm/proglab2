@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    // srand(time(NULL));
+    srand(time(NULL));
     printf("%d\n", rand());
     printf("%d\n", rand());
 }
