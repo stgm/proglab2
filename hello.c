@@ -5,6 +5,6 @@
 int main(void)
 {
     // srand(time(NULL));
-    printf("%d", rand());
-    printf("%d", rand());
+    printf("%d\n", rand());
+    printf("%d\n", rand());
 }
