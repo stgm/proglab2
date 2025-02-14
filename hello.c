@@ -3,5 +3,5 @@
 
 int main(void)
 {
-    srand(time(0));
+    srand(time(NULL));
 }
