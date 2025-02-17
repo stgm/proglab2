@@ -16,7 +16,7 @@ const char* get_maandnaam(int maand);
 
 int main(int argc, string argv[])
 {
-    if(false)
+    if(argc!=3)
     {
         printf("Usage: ./calendar year month\n");
         return 1;
