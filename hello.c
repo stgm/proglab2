@@ -5,7 +5,7 @@
 
 int main(void)
 {
-    get_input("HALLO? ");
+    get_int("HALLO? ");
     srand(time(NULL));
     printf("%d\n", rand());
     printf("%d\n", rand());
