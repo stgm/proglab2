@@ -7,14 +7,9 @@ int gap(int maand_nummer, int jaar_nummer);
 
 int main(int argc, string argv[])
 {
-      if (argc != 3)
-    {
-        printf("Usage: ./calendar year month\n");
-        return 1;
-    }
-    
-    int maand_nummer =atoi(argv[2]);
-    int jaar_nummer = atoi(argv[1]);
+
+    int maand_nummer = get_int("Year: ")
+    int jaar_nummer = get_int("Month: ")
     
     
     
