@@ -8,8 +8,6 @@ int gap(int maand_nummer, int jaar_nummer);
 int main(int argc, string argv[])
 {
 
-    int maand_nummer = get_int("Year: ");
-    int jaar_nummer = get_int("Month: ");
     
     
 
