@@ -24,6 +24,9 @@ int main(int argc, string argv[])
     
     else
     {
+            int maand_nummer = get_int("Year: ");
+    int jaar_nummer = get_int("Month: ");
+
     int jaar= atoi(argv[1]);
     int maand= atoi(argv[2]);
     
