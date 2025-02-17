@@ -1,16 +1,3 @@
-#include <cs50.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-int gap(int maand_nummer, int jaar_nummer);
-
-
-int main(int argc, string argv[])
-{
-
-    
-    
-
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
