@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int main(void)
+int
+main(void)
 {
     get_int("HALLO? ");
     srand(time(NULL));
