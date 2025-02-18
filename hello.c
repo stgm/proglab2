@@ -18,3 +18,5 @@ int main(void)
 d
 3
 srand
+dd
+
