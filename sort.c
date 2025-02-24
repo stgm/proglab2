@@ -50,7 +50,7 @@ int main(int argc, string argv[])
     }
 }
 
-// fills an array of size n with random numbers
+// Fills an array of size n with random numbers
 void generate_random_numbers(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -59,7 +59,7 @@ void generate_random_numbers(int arr[], int n)
     }
 }
 
-// sorts array of n values
+// Sorts array of n values
 void sort(int values[], int n)
 {
     // TODO: implement an O(n^2) sorting algorithm
