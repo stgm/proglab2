@@ -56,10 +56,9 @@ int main(int argc, string argv[])
     }
 
     // Sorts array of n values
-void sort(int values[], int n)
-{
-    // TODO: implement an O(n^2) sorting algorithm
-    return;
-}
-
+    void sort(int values[], int n)
+    {
+        // TODO: implement an O(n^2) sorting algorithm
+        return;
+    }
 }
