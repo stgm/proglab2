@@ -15,15 +15,6 @@ const int MAX = 65536;
 // Sorts array of n values
 void sort(int values[], int n);
 
-// Function to generate an array of n random numbers
-void generate_random_numbers(int arr[], int n)
-{
-    for (int i = 0; i < n; i++)
-    {
-        arr[i] = rand() % 1000; // Random number between 0 and 999
-    }
-}
-
 int main(int argc, string argv[])
 {
     if (argc != 2)
