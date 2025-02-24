@@ -48,7 +48,6 @@ int main(int argc, string argv[])
     {
         printf("%i\n", haystack[i]);
     }
-
 }
 
 // Fill an array of size n with random numbers
