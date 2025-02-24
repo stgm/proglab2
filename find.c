@@ -67,12 +67,12 @@ int main(int argc, string argv[])
     // Try to find needle in haystack
     if (search(needle, haystack, size))
     {
-        printf("\nFound needle in haystack!\n\n");
+        printf("Found needle in haystack!\n\n");
         return 0;
     }
     else
     {
-        printf("\nDidn't find needle in haystack.\n\n");
+        printf("Didn't find needle in haystack.\n\n");
         return 1;
     }
 }
