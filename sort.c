@@ -59,7 +59,7 @@ void generate_random_numbers(int arr[], int n)
     }
 }
 
-// Sorts array of n values
+// sorts array of n values
 void sort(int values[], int n)
 {
     // TODO: implement an O(n^2) sorting algorithm
