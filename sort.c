@@ -12,10 +12,10 @@
 // maximum amount of hay
 const int MAX = 65536;
 
-// fills an array of size n with random numbers
+// Fills array of size n with random numbers
 void generate_random_numbers(int arr[], int n);
 
-// sorts array of n values
+// Sorts array of n values
 void sort(int values[], int n);
 
 int main(int argc, string argv[])
