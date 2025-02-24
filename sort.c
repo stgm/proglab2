@@ -55,7 +55,7 @@ void generate_random_numbers(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        arr[i] = rand() % 1000; // random number between 0 and 999
+        arr[i] = (int) (drand48() * LIMIT); // random number between 0 and 999
     }
 }
 
