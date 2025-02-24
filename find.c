@@ -86,23 +86,42 @@ void generate_random_numbers(int arr[], int n)
     }
 }
 
+
 // Fills array of size n with sequential numbers
 void generate_sequential_numbers(int arr[], int n)
 {
-    // TODO: implement a sequential number generator
-    return;
+    for (int i = 0; i < n; i++)
+    {
+        arr[i] = i;
+    }
 }
 
 // Returns true if value is in array of n values, else false
 bool search(int value, int values[], int n)
 {
-    // TODO: implement the searching algorithm
+    for (int i = 0; i < n; i++)
+    {
+        if (values[i] == value)
+        {
+            return true;
+        }
+    }
     return false;
 }
 
 // Sorts array of n values
 void sort(int values[], int n)
 {
-    // TODO: implement the sorting algorithm
-    return;
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            if (values[j] > values[j + 1])
+            {
+                int temp = values[j];
+                values[j] = values[j + 1];
+                values[j + 1] = temp;
+            }
+        }
+    }
 }
