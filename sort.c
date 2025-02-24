@@ -9,8 +9,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include "helpers.h"
-
 // maximum amount of hay
 const int MAX = 65536;
 
