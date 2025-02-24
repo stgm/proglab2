@@ -54,4 +54,12 @@ int main(int argc, string argv[])
     {
         printf("%i\n", haystack[i]);
     }
+
+    // Sorts array of n values
+void sort(int values[], int n)
+{
+    // TODO: implement an O(n^2) sorting algorithm
+    return;
+}
+
 }
