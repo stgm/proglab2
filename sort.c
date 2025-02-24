@@ -11,6 +11,8 @@
 
 // maximum value of random numbers
 #define LIMIT 65536
+
+// maximum array size
 #define MAX 65536
 
 // Fills array of size n with random numbers
