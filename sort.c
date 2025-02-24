@@ -50,12 +50,12 @@ int main(int argc, string argv[])
     }
 }
 
-// Fill an array of size n with random numbers
+// fill an array of size n with random numbers
 void generate_random_numbers(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
-        arr[i] = rand() % 1000; // Random number between 0 and 999
+        arr[i] = rand() % 1000; // random number between 0 and 999
     }
 }
 
