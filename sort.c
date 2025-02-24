@@ -13,7 +13,7 @@
 const int MAX = 65536;
 
 // Fill an array of size n with random numbers
-void generate_random_numbers(int arr[], int n)
+void generate_random_numbers(int arr[], int n);
 
 // Sorts array of n values
 void sort(int values[], int n);
