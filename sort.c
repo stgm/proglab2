@@ -35,7 +35,7 @@ int main(int argc, string argv[])
     }
 
     // seed the random number generator
-    srand(time(NULL));
+    srand48((long int) time(NULL));
 
     // generate random numbers
     int haystack[size];
