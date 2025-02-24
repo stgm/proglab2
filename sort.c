@@ -11,6 +11,7 @@
 
 // maximum amount of hay
 const int MAX = 65536;
+#define LIMIT 65536
 
 // Fills array of size n with random numbers
 void generate_random_numbers(int arr[], int n);
