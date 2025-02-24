@@ -33,17 +33,17 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // Seed the random number generator
+    // seed the random number generator
     srand(time(NULL));
 
-    // Generate random numbers
+    // generate random numbers
     int haystack[size];
     generate_random_numbers(haystack, size);
 
-    // Sort the array
+    // sort the array
     sort(haystack, size);
 
-    // Print the sorted array
+    // print the sorted array
     for (int i = 0; i < size; i++)
     {
         printf("%i\n", haystack[i]);
