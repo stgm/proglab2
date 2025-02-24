@@ -50,7 +50,7 @@ int main(int argc, string argv[])
     }
 }
 
-// fill an array of size n with random numbers
+// fills an array of size n with random numbers
 void generate_random_numbers(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
