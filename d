@@ -2,5 +2,5 @@
 
 <input name="grade_attributes[subgrades[done]]">
 
-<input name="grade_attributes[subgrades[comment]]">
+<input name="submit[grade_attributes[comment]]">
 
