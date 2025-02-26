@@ -1,7 +1,7 @@
 
 r"\[\w+\["
 
-/\[\w+\w[/
+/\[\w+\[/
 
 <input name="submit[grade_attributes[subgrades[done]]]">
 
