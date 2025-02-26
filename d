@@ -1,4 +1,5 @@
 
+r"\[\w+\["
 
 <input name="submit[grade_attributes[subgrades[done]]]">
 
