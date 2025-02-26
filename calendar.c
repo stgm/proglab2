@@ -5,16 +5,16 @@
 #include <stdlib.h>
 #include <cs50.h>
 
-int aantaldagenjaar(int jaar);
-int aantaldagenmaand(int maand, int jaar);
-bool schrikkeljaar(int jaar);
-int eerstedagmaand(int jaar, int maand);
-int aantaldagenmaand(int maand, int jaar);
-int dagen_in_maand(int maand, int jaar);
-void displaygrid(int eerstedagmaand1, int maandlengte);
-const char* get_maandnaam(int maand);
+char aantaldagenjaar(char jaar);
+char aantaldagenmaand(char maand, char jaar);
+bool schrikkeljaar(char jaar);
+char eerstedagmaand(char jaar, char maand);
+char aantaldagenmaand(char maand, char jaar);
+char dagen_in_maand(char maand, char jaar);
+void displaygrid(char eerstedagmaand1, char maandlengte);
+const char* get_maandnaam(char maand);
 
-int main(int argc, string argv[])
+char main(char argc, string argv[])
 {
     if(false)
     {
@@ -24,10 +24,10 @@ int main(int argc, string argv[])
     
     else
     {
-    int jaar= get_int("Year: ");
-    int maand= get_int("Month: ");
+    char jaar= get_int("Year: ");
+    char maand= get_int("Month: ");
     
-    for(int v=0; v<10; v++)
+    for(char v=0; v<10; v++)
     {
         printf(" ");
     }
@@ -36,7 +36,7 @@ int main(int argc, string argv[])
     printf("%s %d\n", get_maandnaam(maand), jaar);
    
     
-    for(int i=0; i<27; i++)
+    for(char i=0; i<27; i++)
     {
         printf("-");
     }
@@ -44,8 +44,8 @@ int main(int argc, string argv[])
     printf("\n");
     printf("Sun Mon Tue Wed Thu Fri Sat\n");
     
-    int eerstedagmaand1= eerstedagmaand(jaar, maand);
-    int maandlengte = dagen_in_maand(maand, jaar);
+    char eerstedagmaand1= eerstedagmaand(jaar, maand);
+    char maandlengte = dagen_in_maand(maand, jaar);
 
     
     displaygrid(eerstedagmaand1, maandlengte);
@@ -56,7 +56,7 @@ int main(int argc, string argv[])
     }
 }
 
-const char* get_maandnaam(int maand)
+const char* get_maandnaam(char maand)
 {
     const char* maandnamen[] = {
         "Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -67,18 +67,18 @@ const char* get_maandnaam(int maand)
     return maandnamen[maand - 1];
 }
 
-void displaygrid(int eerstedagmaand1, int maandlengte)
+void displaygrid(char eerstedagmaand1, char maandlengte)
 {
     
-    for(int i=0; i<eerstedagmaand1; i++)
+    for(char i=0; i<eerstedagmaand1; i++)
     {
         printf("    ");
     }
     
-    int day = 1;
+    char day = 1;
     
     
-    for (int i = eerstedagmaand1; i < 7; i++) {
+    for (char i = eerstedagmaand1; i < 7; i++) {
         printf("%3d ", day);  
         day++;
     }
@@ -87,7 +87,7 @@ void displaygrid(int eerstedagmaand1, int maandlengte)
     
     while (day <= maandlengte)
         {
-        for (int i = 0; i < 7 && day <= maandlengte; i++) {
+        for (char i = 0; i < 7 && day <= maandlengte; i++) {
             printf("%3d ", day);
             day++;
         }
@@ -99,19 +99,19 @@ void displaygrid(int eerstedagmaand1, int maandlengte)
 }
 
 
-int eerstedagmaand(int jaar, int maand)
+char eerstedagmaand(char jaar, char maand)
 {
-    int kaas= aantaldagenjaar(jaar) + aantaldagenmaand(maand,jaar);
-    int eerstedagmaand=(kaas + 3) % 7;
+    char kaas= aantaldagenjaar(jaar) + aantaldagenmaand(maand,jaar);
+    char eerstedagmaand=(kaas + 3) % 7;
     return eerstedagmaand;
 }
 
 
-int aantaldagenjaar(int jaar)
+char aantaldagenjaar(char jaar)
 {
-    int dagen=0;
+    char dagen=0;
     
-    for(int g = 1800; g < jaar; g++)
+    for(char g = 1800; g < jaar; g++)
     {
         if(schrikkeljaar(g))
         {
@@ -127,18 +127,18 @@ int aantaldagenjaar(int jaar)
 
 }
 
-int aantaldagenmaand(int maand, int jaar)
+char aantaldagenmaand(char maand, char jaar)
 {
-    int dagenmaand[]={ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    char dagenmaand[]={ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     
     if(schrikkeljaar(jaar))
     {
         dagenmaand[1]= 29;
     }
     
-    int aantaldagen = 0;
+    char aantaldagen = 0;
     
-    for(int i=0; i < maand - 1; i++)
+    for(char i=0; i < maand - 1; i++)
     {
         aantaldagen+= dagenmaand[i];
     }    
@@ -146,9 +146,9 @@ int aantaldagenmaand(int maand, int jaar)
     return aantaldagen;
 }
 
-int dagen_in_maand(int maand, int jaar)
+char dagen_in_maand(char maand, char jaar)
 {
-    int dagenmaand[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    char dagenmaand[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
     if (schrikkeljaar(jaar))
     {
@@ -161,7 +161,7 @@ int dagen_in_maand(int maand, int jaar)
 
 
 
-bool schrikkeljaar(int jaar)
+bool schrikkeljaar(char jaar)
 {
     
     if (jaar % 4 == 0)
