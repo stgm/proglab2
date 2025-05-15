@@ -23,7 +23,7 @@ def _selectColorAndSmiley(bla: int) -> typing.Tuple[str, str]:
         return _Colors.PASS, _Smileys.HAPPY
     if bla == 2:
         return _Colors.WARNING, _Smileys.CONFUSED
-    if testResult.hasPassed is None:
+    if bla == 3:
         return _Colors.WARNING, _Smileys.NEUTRAL
     return _Colors.FAIL, _Smileys.SAD
 
