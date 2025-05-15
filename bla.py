@@ -29,4 +29,4 @@ def _selectColorAndSmiley(bla: int) -> tuple[str, str]:
     return _Colors.FAIL, _Smileys.SAD
 
 for i in range(1,5):
-    display("fuck all", 4)
+    display("fuck all", i)
