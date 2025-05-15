@@ -17,6 +17,7 @@ class _Smileys:
 def display(testResult: str, msg: int) -> str:
     color, smiley = _selectColorAndSmiley(msg)
     msg = "{}{} {}{}".format(color, smiley, testResult, _Colors.ENDC)
+    print(msg)
 
 def _selectColorAndSmiley(bla: int) -> tuple[str, str]:
     if bla == 1:
