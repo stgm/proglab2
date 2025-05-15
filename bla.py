@@ -15,7 +15,7 @@ class _Smileys:
     NEUTRAL = ":|"
 
 def display(testResult: str, msg: int) -> str:
-    color, smiley = _selectColorAndSmiley(testResult)
+    color, smiley = _selectColorAndSmiley(msg)
     msg = "{}{} {}{}".format(color, smiley, testResult, _Colors.ENDC)
 
 def _selectColorAndSmiley(bla: int) -> typing.Tuple[str, str]:
