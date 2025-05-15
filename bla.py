@@ -18,7 +18,7 @@ def display(testResult: str, msg: int) -> str:
     color, smiley = _selectColorAndSmiley(msg)
     msg = "{}{} {}{}".format(color, smiley, testResult, _Colors.ENDC)
 
-def _selectColorAndSmiley(bla: int) -> typing.Tuple[str, str]:
+def _selectColorAndSmiley(bla: int) -> tuple[str, str]:
     if bla == 1:
         return _Colors.PASS, _Smileys.HAPPY
     if bla == 2:
