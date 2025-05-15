@@ -10,4 +10,4 @@ class _Colors:
 
 def display(testResult: str) -> str:
     color, smiley = _selectColorAndSmiley(testResult)
-    msg = "{}{} {}{}".format(color, smiley, testResult.description, _Colors.ENDC)
+    msg = "{}{} {}{}".format(color, smiley, testResult, _Colors.ENDC)
