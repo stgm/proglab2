@@ -28,4 +28,5 @@ def _selectColorAndSmiley(bla: int) -> tuple[str, str]:
         return _Colors.WARNING, _Smileys.NEUTRAL
     return _Colors.FAIL, _Smileys.SAD
 
-display("fuck all", 4)
+for i in range(1,5):
+    display("fuck all", 4)
