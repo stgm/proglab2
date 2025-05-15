@@ -8,3 +8,6 @@ class _Colors:
     NAME = '\033[96m'
     ENDC = '\033[0m'
 
+def display(testResult: checkpy.tests.TestResult) -> str:
+    color, smiley = _selectColorAndSmiley(testResult)
+    msg = "{}{} {}{}".format(color, smiley, testResult.description, _Colors.ENDC)
