@@ -8,4 +8,3 @@ class _Colors:
     NAME = '\033[96m'
     ENDC = '\033[0m'
 
-print()
