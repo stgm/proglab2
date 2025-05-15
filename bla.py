@@ -18,7 +18,7 @@ def display(testResult: str) -> str:
     color, smiley = _selectColorAndSmiley(testResult)
     msg = "{}{} {}{}".format(color, smiley, testResult, _Colors.ENDC)
 
-def _selectColorAndSmiley(testResult: str) -> typing.Tuple[str, str]:
+def _selectColorAndSmiley() -> typing.Tuple[str, str]:
     if testResult:
         return _Colors.PASS, _Smileys.HAPPY
     if type(testResult.message) is exception.SourceException:
