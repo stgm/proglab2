@@ -1,3 +1,3 @@
 from checkpy.interactive import testOffline
-testOffline("sp1_exam1", "/home/pyodide", multiprocessing=False, silentMode=False)
+testOffline("sp1_exam1.py", "/home/pyodide", multiprocessing=False, silentMode=False)
 print("\nend tests!")
