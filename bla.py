@@ -14,7 +14,7 @@ class _Smileys:
     CONFUSED = ":S"
     NEUTRAL = ":|"
 
-def display(testResult: str) -> str:
+def display(testResult: str, msg: int) -> str:
     color, smiley = _selectColorAndSmiley(testResult)
     msg = "{}{} {}{}".format(color, smiley, testResult, _Colors.ENDC)
 
