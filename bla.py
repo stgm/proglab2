@@ -27,4 +27,4 @@ def _selectColorAndSmiley(bla: int) -> typing.Tuple[str, str]:
         return _Colors.WARNING, _Smileys.NEUTRAL
     return _Colors.FAIL, _Smileys.SAD
 
-display("fuck all")
+display("fuck all", 1)
