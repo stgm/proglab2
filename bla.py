@@ -18,8 +18,8 @@ def display(testResult: str) -> str:
     color, smiley = _selectColorAndSmiley(testResult)
     msg = "{}{} {}{}".format(color, smiley, testResult, _Colors.ENDC)
 
-def _selectColorAndSmiley() -> typing.Tuple[str, str]:
-    if testResult:
+def _selectColorAndSmiley(bla: int) -> typing.Tuple[str, str]:
+    if bla == 1:
         return _Colors.PASS, _Smileys.HAPPY
     if type(testResult.message) is exception.SourceException:
         return _Colors.WARNING, _Smileys.CONFUSED
